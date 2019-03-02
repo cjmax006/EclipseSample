@@ -11,7 +11,7 @@ public class AppTest {
     	System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
     	WebDriver driver = new ChromeDriver();
     	String eTitle = "Meet Gurr99";
-    	String aTitle = "";
+    	String aTitle = ""; 
     	
     	driver.get("http://www.guru99.com");
     	driver.manage().window().maximize();
@@ -23,6 +23,7 @@ public class AppTest {
     			System.out.println("Test Failed");
     	
     	System.out.println("Test is over");
+    	System.out.println("6876");
     	driver.close();   	
     	
     }
