@@ -1,38 +1,28 @@
 package com.learning.selenium;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
-
-/**
- * Unit test for simple App.
- */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
+public class AppTest{
+	
+	public AppTest(){
+		System.out.println("This is constructor");
+	}
+	
+	public void beforeTest(){
+		System.out.println("BeforeTest");
+	}
+	
+	public void TC01()
     {
-        super( testName );
+		System.out.println("Test01");
     }
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
+    public void TC02()
     {
-        return new TestSuite( AppTest.class );
+    	System.out.println("Test02");
     }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    
+    
+    public void afterTest(){
+    	System.out.println("AfterTest");
     }
+    
 }
