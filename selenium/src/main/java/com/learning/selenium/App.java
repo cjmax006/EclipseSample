@@ -15,4 +15,9 @@ public class App{
         obj.TC02();
         obj.afterTest();
     }
+	
+	@Test
+	public void Test2(){
+	System.out.println("pull request");
+	}
 }
